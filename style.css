@@ -44,8 +44,12 @@ input {
     
 }
 input:focus {
-    box-shadow: 1px 1px 8px black;
+    box-shadow: 1px 1px 4px rgb(83, 83, 83);
+    border: none;
     border-color: blue;
+}
+input:invalid {
+    border: 1px solid red;
 }
 .middle {
     box-shadow: 2px 2px 8px rgb(165, 165, 165);
@@ -57,6 +61,7 @@ button {
     margin: 20px;
     background-color: #596D48;
     border-radius: 4px;
+    border: none;
     color: rgb(243, 243, 243);
     font-family: "Roboto";
     font-weight: bold;
@@ -79,4 +84,23 @@ a:hover {
 }
 .picture {
     position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    background-color: rgb(0,0,0,.6);
+    width: 100%;
+    height: 25%;
+    opacity: .5;
+    justify-content: center;
+    align-items: center;
+}
+.odin {
+    opacity: 1;
+    width:30%;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    margin-left: 33%;
 }

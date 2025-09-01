@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main">
         <div class="picture">
             <img src="resources/halie-west-25xggax4bSA-unsplash.jpg" alt="" id="plant">
+            <div class="overlay">
+                <img src="resources/odin-lined.png" class="odin">
+            </div>
         </div>
 
         <div>
@@ -37,17 +39,17 @@
                         </div>
                         <div class="form-item">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text" id="phone" required>
+                            <input type="text" id="phone" required pattern="[0-9]{10}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-item">
                             <label for="pass">PASSWORD</label>
-                            <input type="password" id="pass" required>
+                            <input type="password" id="pass" required pattern="[0-9]{8}" title="the password must contain exactly 8 digits">
                         </div>
                         <div class="form-item">
                             <label for="secondpass">CONFIRM PASSWORD</label>
-                            <input type="password" id="secondpass" required>
+                            <input type="password" id="secondpass" required required pattern="[0-9]{8}" title="the password must contain exactly 8 digits">
                         </div>
                     </div>
                 </form>
