@@ -85,6 +85,13 @@ a:hover {
 .picture {
     position: relative;
 }
+.picture p {
+    position: absolute;
+    top: 94%;
+    text-align: center;
+    left: 25%;
+    color: white;
+}
 .overlay {
     position: absolute;
     top: 25%;
